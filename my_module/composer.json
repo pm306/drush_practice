@@ -1,0 +1,22 @@
+{
+    "name": "drupal/my_module",
+    "description": "A Drupal module with a custom Drush command",
+    "type": "drupal-module",
+    "require": {
+      "drupal/core": "^10.0",
+      "drush/drush": "^12.0"
+    },
+    "autoload": {
+      "psr-4": {
+        "Drupal\\my_module\\": "src/"
+      }
+    },
+    "extra": {
+      "drush": {
+        "services": {
+          "drush.services.yml": "^12"
+        }
+      }
+    }
+  }
+  
